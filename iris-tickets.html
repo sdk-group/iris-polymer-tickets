@@ -1,0 +1,32 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="iris-tickets">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+  </template>
+  <script>
+    Polymer({
+      is: 'iris-tickets',
+      properties: {
+        tickets: {
+          type: Object,
+          notify: true,
+          value: {}
+        },
+        departments: {
+          type: Array,
+          value: []
+        },
+        filters: {
+          type: Object
+        }
+      }
+
+
+    });
+  </script>
+</dom-module>
